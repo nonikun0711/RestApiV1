@@ -69,9 +69,7 @@ module.exports = function(app){
             }
         });
     }
-   
-
-    //Link routes and functions
+   //Link routes and functions
     app.get('/usuarios', list);
     app.get('/usuarios/:email', find);
     app.post('/usuario', createUser);   
