@@ -57,6 +57,5 @@ io.sockets.on('connection', function (socket) {
 
 
 });
-
 //Start the server
 server.listen(3000);
