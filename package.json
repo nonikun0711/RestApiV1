@@ -7,11 +7,11 @@
     "dependencies": {
         "express": "*",
         "mongoose":"*",
-        "socket.io": "*"
+        "ws": "0.4.x"
     },
     "engines": {
         "node": "0.10.x",
-        "npm": "1.3.x"
+        "npm": "1.2.x"
     },
     "author": "Antony Argomedo"
 }
