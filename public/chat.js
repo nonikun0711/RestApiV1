@@ -7,9 +7,12 @@ $(document).ready(function () {
     geolocalizar(); 
     socket.on('new', add);
 
-    socket.on('location update', updateMarker);        
-    $("#formulario").bind("submit", enviar);
+    socket.on('location update', updateMarker);  
 
+    $("#formulario").submit(function(e){
+      e.preventDefault();
+      enviar();
+    });     
 });
 
 
@@ -84,11 +87,7 @@ function mostrarMapa(datos)
     };
     mapa = new google.maps.Map( $("#mapa_canvas")[0],  opciones);    
     
-    $("#mapa_canvas").css("height", "400px")
-                     .css("margin", "0 auto")
-                     .css("width", "600px");
-
-     socket.emit('request locations', loadMarkers);
+    socket.emit('request locations', loadMarkers);
 
     
 }
