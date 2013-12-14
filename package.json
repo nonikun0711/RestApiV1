@@ -1,18 +1,18 @@
 {
-    "name": "api-rest-crud",
+    "name": "api-rest-and-chat",
     "version": "0.0.1",
     "scripts": {
     	"start": "node app.js"
     },
     "dependencies": {
-        "express": "*",
-        "mongoose":"*",
+        "express": "3.4.*",
+        "mongoose":"3.8.*",
         "socket.io": "*"
     },
     "engines": {
         "node": "0.10.x"
     },
     "author": "Antonny Argomedo",
-    "subdomain": "api-rest-crud"
+    "subdomain": "api-rest-and-chat"
 }
         
